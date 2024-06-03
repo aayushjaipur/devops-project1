@@ -9,6 +9,6 @@ RUN rm -rf healet.zip &&\
     cp -rf healet-html/* . &&\ 
     rm -rf healet &&\
     makdir aayush &&\
-    touch aayush.txt
+    touch aayush/aayush.txt
 EXPOSE 80
 cmd ["/usr/sbin/httpd", "-D", "FOREGROUND"]
