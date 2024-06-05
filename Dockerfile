@@ -7,8 +7,6 @@ RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page2
 RUN unzip healet.zip
 RUN rm -rf healet.zip &&\ 
     cp -rf healet-html/* . &&\ 
-    rm -rf healet &&\
-    makdir aayush &&\
-    touch aayush/aayush.txt
+    rm -rf healet 
 EXPOSE 80
 cmd ["/usr/sbin/httpd", "-D", "FOREGROUND"]
